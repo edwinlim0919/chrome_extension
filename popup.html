@@ -3,14 +3,36 @@
   <head>
     <style>
       button {
-        height: 30px;
-        width: 30px;
+        height: 50px;
+        width: 100px;
+        margin: 0 auto;
+        display: block;
         outline: none;
+      }
+
+      h1 {
+        height: 50px;
+        width: 300px;
+        text-align: center;
+      }
+      div {
+        margin: 20px 20px 20px 20px;
+      }
+      input{
+        margin: 0px auto;
+        padding: 5px;
+        display: block;
       }
     </style>
   </head>
   <body>
-    <button id="changeColor"></button>
-    <script src="popup.js"></script>
+    <h1>Fact Check (Alpha)</h1>
+    <div>
+      <input id="inputStr" maxlength="2048" type="text">
+    </div>
+    <div>
+      <button id="fact_check">Check It!</button>
+      <script src="popup.js"></script>
+    </div>
   </body>
 </html>
